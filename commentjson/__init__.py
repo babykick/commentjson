@@ -1,1 +1,1 @@
-from .commentjson import (dump, dumps, JSONLibraryException, load, loads)
+from .core import (dump, dumps, JSONLibraryException, load, loads)
