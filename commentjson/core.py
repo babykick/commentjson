@@ -69,7 +69,7 @@ def loads(text, **kwargs):
     try:
         return json.loads('\n'.join(lines), **kwargs)
     except Exception as e:
-        raise JSONLibraryException(e.message)
+        raise JSONLibraryException(str(e))
 
 
 def dumps(obj, **kwargs):
